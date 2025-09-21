@@ -1,0 +1,30 @@
+/* Unified Design System */
+:root {
+  /* Color Palette */
+  --primary-color: #3B82F6;
+  --secondary-color: #10B981;
+  --background-color: #0f0f0f;
+  --text-color: #ffffff;
+}
+
+/* Global Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+body {
+  font-family: 'Space Grotesk', 'GE SS Unique Light', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Utility Classes */
+.text-gradient {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
