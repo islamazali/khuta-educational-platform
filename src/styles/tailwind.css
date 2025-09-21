@@ -1,0 +1,18 @@
+/* Tailwind base import for global styles */
+@tailwind base;
+
+/* Tailwind components import */
+@tailwind components;
+
+/* Custom BEM utilities */
+/* Block for custom buttons */
+.btn { padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); transition: all var(--duration-normal) var(--ease-out); }
+.btn--primary { background-color: var(--primary-red); color: var(--text-inverse); }
+.btn--secondary { background-color: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-primary); }
+
+/* Block for cards */
+.card { background-color: var(--bg-card); padding: var(--space-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+.card--highlighted { border: 2px solid var(--primary-yellow); }
+
+/* Tailwind utilities import */
+@tailwind utilities;

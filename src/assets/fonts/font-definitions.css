@@ -1,0 +1,207 @@
+/* GE SS Unique Font Family - Complete Weights */
+/* عائلة خط جي إي إس إس يونيك - جميع الأوزان */
+
+/* Light Weight */
+@font-face {
+  font-family: "GE SS Unique";
+  src: url("GE_SS_Unique_Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular Weight */
+@font-face {
+  font-family: "GE SS Unique";
+  src: url("GE_SS_Unique_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium Weight */
+@font-face {
+  font-family: "GE SS Unique";
+  src: url("GE_SS_Unique_Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Weight */
+@font-face {
+  font-family: "GE SS Unique";
+  src: url("GE_SS_Unique_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Arabic-specific Unicode Range */
+@font-face {
+  font-family: "GE SS Unique Arabic";
+  src: url("GE_SS_Unique_Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GE SS Unique Arabic";
+  src: url("GE_SS_Unique_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GE SS Unique Arabic";
+  src: url("GE_SS_Unique_Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GE SS Unique Arabic";
+  src: url("GE_SS_Unique_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+  font-display: swap;
+}
+
+/* Alias families used elsewhere in project */
+@font-face {
+  font-family: "GE SS Unique Light";
+  src: url("GE_SS_Unique_Light.otf") format("opentype");
+  font-weight: 300 400 500 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GE SS Unique Light Arabic";
+  src: url("GE_SS_Unique_Light.otf") format("opentype");
+  font-weight: 300 400 500 700;
+  font-style: normal;
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+  font-display: swap;
+}
+
+/* Utility Classes */
+.font-ge {
+  font-family:
+    "GE SS Unique",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.font-ge-light {
+  font-family:
+    "GE SS Unique",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 300;
+}
+
+.font-ge-regular {
+  font-family:
+    "GE SS Unique",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 400;
+}
+
+.font-ge-medium {
+  font-family:
+    "GE SS Unique",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 500;
+}
+
+.font-ge-bold {
+  font-family:
+    "GE SS Unique",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 700;
+}
+
+.font-ge-arabic {
+  font-family:
+    "GE SS Unique Arabic", "GE SS Unique", "Segoe UI", system-ui, sans-serif;
+}
+
+/* Language-specific Styles */
+.arabic-text {
+  font-family: "GE SS Unique Arabic", "GE SS Unique", system-ui, sans-serif;
+  direction: rtl;
+  text-align: right;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1;
+}
+
+.english-text {
+  font-family:
+    "GE SS Unique",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  direction: ltr;
+  text-align: left;
+}
+
+/* Responsive Font Scaling */
+:root {
+  --font-ge-base-size: 1rem;
+  --font-ge-scale-ratio: 1.125;
+}
+
+.font-ge-xs {
+  font-size: calc(
+    var(--font-ge-base-size) / var(--font-ge-scale-ratio) /
+      var(--font-ge-scale-ratio)
+  );
+}
+.font-ge-sm {
+  font-size: calc(var(--font-ge-base-size) / var(--font-ge-scale-ratio));
+}
+.font-ge-base {
+  font-size: var(--font-ge-base-size);
+}
+.font-ge-lg {
+  font-size: calc(var(--font-ge-base-size) * var(--font-ge-scale-ratio));
+}
+.font-ge-xl {
+  font-size: calc(
+    var(--font-ge-base-size) * var(--font-ge-scale-ratio) *
+      var(--font-ge-scale-ratio)
+  );
+}
+.font-ge-2xl {
+  font-size: calc(
+    var(--font-ge-base-size) * var(--font-ge-scale-ratio) *
+      var(--font-ge-scale-ratio) * var(--font-ge-scale-ratio)
+  );
+}
